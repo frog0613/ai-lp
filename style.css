@@ -1,0 +1,197 @@
+:root {
+    --primary-color: #00aaff;
+    --secondary-color: #00e676;
+    --dark-bg: #0a192f;
+    --light-bg: #112240;
+    --text-color: #ccd6f6;
+    --heading-color: #ffffff;
+    --font-family: 'Segoe UI', 'Meiryo', 'system-ui', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--dark-bg);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: rgba(10, 25, 47, 0.85);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--heading-color);
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+header ul li {
+    margin-left: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: var(--primary-color);
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: 1px solid var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    color: var(--primary-color) !important;
+}
+
+#hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 60px; /* for fixed header */
+}
+
+#hero h1 {
+    font-size: 3rem;
+    color: var(--heading-color);
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+}
+
+.btn-large {
+    font-size: 1.1rem;
+    padding: 15px 30px;
+}
+
+section {
+    padding: 6rem 0;
+}
+
+section:nth-child(odd) {
+    background-color: var(--light-bg);
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--heading-color);
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: var(--primary-color);
+}
+
+#about p {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background-color: var(--dark-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid #1e2d4a;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.event-item {
+    background-color: var(--light-bg);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-left: 5px solid var(--secondary-color);
+    border-radius: 5px;
+}
+
+.event-item h3 {
+    color: var(--heading-color);
+    margin-bottom: 0.5rem;
+}
+
+.event-date {
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+footer {
+    background-color: var(--light-bg);
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 4rem;
+}
