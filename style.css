@@ -1,9 +1,9 @@
 :root {
-    --primary-color: #00e676; /* Main accent: Green */
-    --secondary-color: #64ffda; /* Secondary accent: Lighter Green/Mint */
-    --dark-bg: #0a1d1a;      /* Dark Greenish-Slate BG */
-    --light-bg: #112a24;     /* Lighter Greenish-Slate BG */
-    --text-color: #bde0c4;   /* Light Greenish-Gray Text */
+    --primary-color: #ff80ab;   /* Main accent: Pink */
+    --secondary-color: #ffb3c1; /* Secondary accent: Lighter Pink */
+    --dark-bg: #331d2c;         /* Dark Purple/Pink BG */
+    --light-bg: #3f2e3e;        /* Lighter Purple/Pink BG */
+    --text-color: #fdecf2;      /* Light Pinkish-Gray Text */
     --heading-color: #ffffff;
     --font-family: 'Segoe UI', 'Meiryo', 'system-ui', sans-serif;
 }
@@ -28,7 +28,7 @@ body {
 }
 
 header {
-    background-color: rgba(10, 29, 26, 0.85);
+    background-color: rgba(51, 29, 44, 0.85);
     padding: 1rem 0;
     position: fixed;
     width: 100%;
@@ -157,7 +157,7 @@ h2::after {
     background-color: var(--dark-bg);
     padding: 2rem;
     border-radius: 8px;
-    border: 1px solid #1c4b3e; /* Updated for green theme */
+    border: 1px solid #5c4a59; /* Updated for pink theme */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
