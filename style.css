@@ -1,9 +1,9 @@
 :root {
-    --primary-color: #ff80ab;   /* Main accent: Pink */
-    --secondary-color: #ffb3c1; /* Secondary accent: Lighter Pink */
-    --dark-bg: #331d2c;         /* Dark Purple/Pink BG */
-    --light-bg: #3f2e3e;        /* Lighter Purple/Pink BG */
-    --text-color: #fdecf2;      /* Light Pinkish-Gray Text */
+    --primary-color: #ff4d4d;   /* Main accent: Red */
+    --secondary-color: #ff8080; /* Secondary accent: Lighter Red */
+    --dark-bg: #4d1a1a;         /* Dark Red/Brown BG */
+    --light-bg: #662222;        /* Lighter Red/Brown BG */
+    --text-color: #ffe6e6;      /* Light Reddish-White Text */
     --heading-color: #ffffff;
     --font-family: 'Segoe UI', 'Meiryo', 'system-ui', sans-serif;
 }
