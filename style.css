@@ -1,9 +1,9 @@
 :root {
-    --primary-color: #ff4d4d;   /* Main accent: Red */
-    --secondary-color: #ff8080; /* Secondary accent: Lighter Red */
-    --dark-bg: #4d1a1a;         /* Dark Red/Brown BG */
-    --light-bg: #662222;        /* Lighter Red/Brown BG */
-    --text-color: #ffe6e6;      /* Light Reddish-White Text */
+    --primary-color: #007bff;   /* Main accent: Bright Blue */
+    --secondary-color: #3399ff; /* Secondary accent: Lighter Blue */
+    --dark-bg: #1a1a1a;         /* Dark BG */
+    --light-bg: #2c2c2c;        /* Lighter BG */
+    --text-color: #cccccc;      /* Light Gray Text */
     --heading-color: #ffffff;
     --font-family: 'Segoe UI', 'Meiryo', 'system-ui', sans-serif;
 }
@@ -28,7 +28,7 @@ body {
 }
 
 header {
-    background-color: rgba(51, 29, 44, 0.85);
+    background-color: rgba(26, 26, 26, 0.85);
     padding: 1rem 0;
     position: fixed;
     width: 100%;
@@ -157,7 +157,7 @@ h2::after {
     background-color: var(--dark-bg);
     padding: 2rem;
     border-radius: 8px;
-    border: 1px solid #5c4a59; /* Updated for pink theme */
+    border: 1px solid #444;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
