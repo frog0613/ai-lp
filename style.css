@@ -1,10 +1,11 @@
 :root {
-    --primary-color: #ff69b4;   /* Main accent: Hot Pink */
-    --secondary-color: #ffb6c1; /* Secondary accent: Light Pink */
-    --dark-bg: #612245;         /* Dark BG */
-    --light-bg: #8b476f;        /* Lighter BG */
-    --text-color: #fce4ec;      /* Light Pink Text */
-    --heading-color: #ffffff;
+    --primary-color: #007bff;   /* Main accent: Bright Blue */
+    --secondary-color: #58a6ff; /* Secondary accent: Lighter Blue */
+    --bg-light: #ffffff;        /* Main background: White */
+    --bg-alt: #f8f9fa;         /* Alternate background: Light Gray */
+    --text-color: #495057;      /* Body text: Dark Gray */
+    --heading-color: #212529;   /* Headings: Near Black */
+    --border-color: #dee2e6;    /* Border color */
     --font-family: 'Segoe UI', 'Meiryo', 'system-ui', sans-serif;
 }
 
@@ -16,7 +17,7 @@
 
 body {
     font-family: var(--font-family);
-    background-color: var(--dark-bg);
+    background-color: var(--bg-light);
     color: var(--text-color);
     line-height: 1.6;
 }
@@ -28,13 +29,14 @@ body {
 }
 
 header {
-    background-color: rgba(97, 34, 69, 0.85);
+    background-color: rgba(255, 255, 255, 0.85);
     padding: 1rem 0;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
     backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-color);
 }
 
 header nav {
@@ -85,6 +87,7 @@ header a:hover {
 .btn-primary:hover {
     background-color: transparent;
     color: var(--primary-color) !important;
+    border-color: var(--primary-color);
 }
 
 #hero {
@@ -94,6 +97,7 @@ header a:hover {
     justify-content: center;
     text-align: center;
     padding-top: 60px; /* for fixed header */
+    background-color: var(--bg-light);
 }
 
 #hero h1 {
@@ -106,6 +110,7 @@ header a:hover {
     font-size: 1.2rem;
     max-width: 600px;
     margin: 0 auto 2rem auto;
+    color: var(--text-color);
 }
 
 .btn-large {
@@ -117,8 +122,8 @@ section {
     padding: 6rem 0;
 }
 
-section:nth-child(odd) {
-    background-color: var(--light-bg);
+section:nth-child(even) {
+    background-color: var(--bg-alt);
 }
 
 h2 {
@@ -154,29 +159,31 @@ h2::after {
 }
 
 .card {
-    background-color: var(--dark-bg);
+    background-color: var(--bg-light);
     padding: 2rem;
     border-radius: 8px;
-    border: 1px solid #8b476f;
+    border: 1px solid var(--border-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
 
 .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .card h3 {
-    color: var(--secondary-color);
+    color: var(--primary-color);
     margin-bottom: 1rem;
 }
 
 .event-item {
-    background-color: var(--light-bg);
+    background-color: var(--bg-light);
     padding: 1.5rem;
     margin-bottom: 1.5rem;
-    border-left: 5px solid var(--secondary-color);
+    border-left: 5px solid var(--primary-color);
     border-radius: 5px;
+    border: 1px solid var(--border-color);
 }
 
 .event-item h3 {
@@ -186,12 +193,13 @@ h2::after {
 
 .event-date {
     font-weight: bold;
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 footer {
-    background-color: var(--light-bg);
+    background-color: var(--bg-alt);
     text-align: center;
     padding: 2rem 0;
     margin-top: 4rem;
+    border-top: 1px solid var(--border-color);
 }
